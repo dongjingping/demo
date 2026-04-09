@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>木晴设计 | 阳光治愈风作品集</title>
+    <meta
+      name="description"
+      content="阳光治愈风设计师主页，展示作品、服务与咨询接单入口，适配小红书引流场景。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-decor" aria-hidden="true"></div>
+    <audio id="bgm" loop preload="none">
+      <source
+        src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_d614e94ab5.mp3?filename=gentle-piano-loop-9744.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <header class="site-header" id="top">
+      <div class="nav-wrap container">
+        <a href="#home" class="brand">
+          <span class="avatar" aria-hidden="true">☀</span>
+          <span class="brand-text">
+            <strong>木晴设计</strong>
+            <small>Sunlight Visual Studio</small>
+          </span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="打开导航">☰</button>
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home">首页</a>
+          <a href="#works">作品展示</a>
+          <a href="#services">服务介绍</a>
+          <a href="#about">关于我</a>
+          <a href="#contact">咨询接单</a>
+          <a class="xhs-link" href="https://www.xiaohongshu.com" target="_blank" rel="noreferrer"
+            >小红书 ↗</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container section" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">小红书引流友好 · 阳光治愈风</p>
+          <h1>木晴设计｜用温暖笔触，做有温度的视觉表达</h1>
+          <p>
+            专注海报设计、Logo定制、写真排版与小店视觉升级。
+            清新柔和、快速响应，适配个人与小型商家的表达需求。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">咨询接单｜小红书粉丝专属优惠</a>
+            <a class="btn btn-soft" href="#works">先看案例</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="cloud cloud-a"></div>
+          <div class="cloud cloud-b"></div>
+          <div class="line"></div>
+        </div>
+      </section>
+
+      <section class="container highlights section">
+        <article class="card">
+          <h3>作品风格</h3>
+          <p>阳光治愈风，低饱和高质感，截图录屏都很出片。</p>
+        </article>
+        <article class="card">
+          <h3>服务品类</h3>
+          <p>海报设计、Logo设计、写真排版、店铺视觉体系搭建。</p>
+        </article>
+        <article class="card">
+          <h3>接单优势</h3>
+          <p>需求沟通细致，支持多轮优化，交付规范可商用素材。</p>
+        </article>
+      </section>
+
+      <section class="container section works" id="works">
+        <div class="section-head">
+          <h2>作品展示</h2>
+          <p>点击分类快速浏览，选中卡片可查看作品详情。</p>
+        </div>
+        <div class="tags" id="workTags">
+          <button class="tag active" data-category="all">全部</button>
+          <button class="tag" data-category="poster">海报设计</button>
+          <button class="tag" data-category="logo">Logo设计</button>
+          <button class="tag" data-category="photo">写真排版</button>
+          <button class="tag" data-category="shop">店铺视觉</button>
+          <button class="tag" data-category="other">其他设计</button>
+        </div>
+        <div class="work-grid" id="workGrid">
+          <article class="work-card" data-category="poster">
+            <img src="https://picsum.photos/seed/poster-sun/800/600" alt="春日活动海报设计" />
+            <div class="work-info">
+              <h3>春日活动海报</h3>
+              <p>以浅橙与淡绿构建柔和节日氛围，适配门店宣传与社媒发布。</p>
+              <small>2026.03</small>
+            </div>
+          </article>
+          <article class="work-card" data-category="logo">
+            <img src="https://picsum.photos/seed/logo-heal/800/600" alt="治愈系品牌Logo设计" />
+            <div class="work-info">
+              <h3>治愈系品牌Logo</h3>
+              <p>圆润字形与太阳符号组合，适合个人IP和轻量商业品牌。</p>
+              <small>2026.02</small>
+            </div>
+          </article>
+          <article class="work-card" data-category="photo">
+            <img src="https://picsum.photos/seed/photo-layout/800/600" alt="写真排版案例" />
+            <div class="work-info">
+              <h3>个人写真排版</h3>
+              <p>留白充分、信息层次清晰，强化人物故事感和温暖氛围。</p>
+              <small>2026.01</small>
+            </div>
+          </article>
+          <article class="work-card" data-category="shop">
+            <img src="https://picsum.photos/seed/shop-visual/800/600" alt="小店视觉升级案例" />
+            <div class="work-info">
+              <h3>小店视觉升级</h3>
+              <p>统一封面、主图与海报视觉，帮助店铺形成稳定品牌感。</p>
+              <small>2025.12</small>
+            </div>
+          </article>
+          <article class="work-card" data-category="other">
+            <img src="https://picsum.photos/seed/other-xhs/800/600" alt="小红书封面设计案例" />
+            <div class="work-info">
+              <h3>小红书封面设计</h3>
+              <p>重点优化标题可读性与风格统一度，提升内容点击率。</p>
+              <small>2025.11</small>
+            </div>
+          </article>
+          <article class="work-card" data-category="poster">
+            <img src="https://picsum.photos/seed/poster-cafe/800/600" alt="咖啡店主题海报设计" />
+            <div class="work-info">
+              <h3>咖啡店主题海报</h3>
+              <p>温暖颗粒质感搭配柔和排版，兼顾线下打印与线上传播。</p>
+              <small>2025.10</small>
+            </div>
+          </article>
+        </div>
+        <p class="mini-tip">点击作品查看更多细节｜小红书同名，关注解锁更多案例</p>
+      </section>
+
+      <section class="container section services" id="services">
+        <div class="section-head">
+          <h2>服务介绍</h2>
+          <p>明确服务内容与报价区间，降低沟通成本。</p>
+        </div>
+
+        <div class="service-list">
+          <article class="card">
+            <h3>海报设计</h3>
+            <p>个人海报、店铺海报、节日海报，支持线上线下多场景使用。</p>
+          </article>
+          <article class="card">
+            <h3>Logo定制</h3>
+            <p>品牌符号构建、标准字优化、基础应用延展，适合个人/小店。</p>
+          </article>
+          <article class="card">
+            <h3>写真排版</h3>
+            <p>写真集版式设计、图文故事感表达，突出风格一致与情绪氛围。</p>
+          </article>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>基础档</h3>
+            <p class="price">¥199 - ¥499</p>
+            <p>适合单张海报/基础排版，含1次优化。</p>
+          </article>
+          <article class="price-card">
+            <h3>进阶档</h3>
+            <p class="price">¥500 - ¥1299</p>
+            <p>适合系列视觉方案，含3次优化与配套物料。</p>
+          </article>
+          <article class="price-card">
+            <h3>定制档</h3>
+            <p class="price">¥1300+</p>
+            <p>适合品牌整体升级，按需求独立报价与排期。</p>
+          </article>
+        </div>
+
+        <div class="process card">
+          <h3>服务流程</h3>
+          <ol>
+            <li>咨询需求</li>
+            <li>确认方案</li>
+            <li>支付定金</li>
+            <li>开始设计</li>
+            <li>修改定稿</li>
+            <li>交付文件</li>
+          </ol>
+        </div>
+
+        <div class="xhs-offer">
+          <strong>小红书粉丝专属服务：</strong>下单立减 ¥50 + 免费加急评估一次
+        </div>
+      </section>
+
+      <section class="container section about" id="about">
+        <div class="section-head">
+          <h2>关于我</h2>
+          <p>温暖亲和、稳定交付、注重沟通体验。</p>
+        </div>
+        <div class="about-box">
+          <div class="portrait" aria-hidden="true">🌤</div>
+          <div>
+            <p class="intro">
+              95后设计师，偏爱温暖治愈风，擅长把生活里的小美好融入视觉表达，
+              认真对待每一个设计需求，力求好看且实用。
+            </p>
+            <div class="skill-tags">
+              <span>阳光风设计</span>
+              <span>海报设计</span>
+              <span>Logo定制</span>
+              <span>写真排版</span>
+              <span>快速出稿</span>
+            </div>
+            <ul class="timeline">
+              <li>从事设计 3 年</li>
+              <li>服务 100+ 个人/小店客户</li>
+              <li>擅长适配小红书风格设计</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section contact" id="contact">
+        <div class="section-head">
+          <h2>咨询接单</h2>
+          <p>可填写表单或直接扫码联系，24小时内回复。</p>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form card" id="contactForm">
+            <label>
+              姓名
+              <input required type="text" placeholder="请输入你的称呼" />
+            </label>
+            <label>
+              联系方式
+              <input required type="text" placeholder="微信 / 手机 / 小红书账号" />
+            </label>
+            <label>
+              需求描述
+              <textarea required rows="4" placeholder="请描述你的设计需求～"></textarea>
+            </label>
+            <label>
+              上传参考图（示意）
+              <input type="file" />
+            </label>
+            <button type="submit" class="btn btn-primary">提交需求，立即回复</button>
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+          </form>
+
+          <div class="qrcode card">
+            <h3>扫码咨询｜小红书粉丝专属优惠</h3>
+            <div class="qr-wrap">
+              <button class="qr" data-qr="微信二维码" aria-label="查看微信二维码">微信码</button>
+              <button class="qr" data-qr="小红书二维码" aria-label="查看小红书二维码">小红书码</button>
+            </div>
+            <p>建议保存二维码到相册，方便后续扫码沟通。</p>
+            <button class="btn btn-soft music-toggle" id="musicToggle">播放轻柔背景音乐</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 木晴设计 版权所有</p>
+        <p>联系：微信 MuQingDesign ｜ 小红书 @木晴设计</p>
+        <p>所有作品均为原创，禁止盗用</p>
+      </div>
+    </footer>
+
+    <dialog class="qr-dialog" id="qrDialog">
+      <div class="dialog-content">
+        <h3 id="qrTitle">二维码</h3>
+        <div class="mock-qr">QR</div>
+        <p>点击右上角保存截图即可使用</p>
+        <button class="btn btn-primary" id="closeDialog">关闭</button>
+      </div>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
